@@ -13,9 +13,9 @@ import pandas as pd
 
 
 
-img_path = 'https://github.com/SalvatoreRa/StreamStyle/blob/main/img/robot_painting.png?raw=true'
-capt = 'An android painting. Image created by the author with DALL-E'
-img_logo = 'https://github.com/SalvatoreRa/StreamStyle/blob/main/img/logo.png?raw=true'
+img_path = 'https://github.com/shubhrakarmahe/streamlit_demos/blob/main/neural_style_transfar/img/AdobeStock_579461611_Preview.jpeg?raw=true'
+capt = 'Image Reference : AdobeStock'
+#img_logo = 'https://github.com/shubhrakarmahe/streamlit_demos/blob/main/neural_style_transfar/img/logo.png?raw=true'
 
 
 def load_images():
@@ -85,23 +85,25 @@ def main():
         st.markdown(""" <style> .font {
         font-size:35px ; font-family: 'Cooper Black'; color: #000000;} 
         </style> """, unsafe_allow_html=True)
-        st.markdown('<p class="font">StreamStyle</p>', unsafe_allow_html=True)
+        st.markdown('<p class="font">We Love Art</p>', unsafe_allow_html=True)
         
         
         
     with col2:
-        response = requests.get(img_logo)
-        logo = Image.open(BytesIO(response.content))               
-        st.image(logo,  width=150)
+        pass
+        #response = requests.get(img_logo)
+        #logo = Image.open(BytesIO(response.content))               
+        #st.image(logo,  width=1500)
     
     response = requests.get(img_path)
     img_screen = Image.open(BytesIO(response.content))
     st.image(img_screen, caption=capt, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.subheader('Transform the style of your image with AI')
     
-    st.sidebar.image(logo,  width=150)
-    st.sidebar.markdown("---")
-    #st.sidebar.markdown("Made by [Salvatore Raieli](https://www.linkedin.com/in/salvatore-raieli/)")
+    #st.sidebar.image(logo,  width=150)
+    #st.markdown('<p class="font">We Love Art</p>', unsafe_allow_html=True)
+    #st.sidebar.markdown("---")
+   
     st.sidebar.markdown("---")
     with st.sidebar.expander("About this App"):
      st.write("""
