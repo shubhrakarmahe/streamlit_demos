@@ -9,14 +9,23 @@ Later, Google released a method that allowed several styles to be applied at the
 we will use Sreamlit, a Python library that allows us to create web apps. Not only that, but it also allows us to be able to deploy to the cloud (you just need to have an account on GitHub).
 
 Step 1: create app.py file in which we first insert the libraries we need.
+
 Step 2: create functions that allow us to load images into our app.
+
 Step 3: preprocess the images i.e. rescale the image and transform it into a tensor.
+
 Step 4: transform the output tensor to an image.
+
 Step 5: load pre-trained model (https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2) from TensorFlow Hub
+
 Step 6: write a function that combines all the above elements together.
-Step 7: post-processe the resulting image
+
+Step 7: post-process the resulting image
+
 Step 8: create streamlit web app
+
 Step 9: deploy the app to streamlit cloud by using Github code repo
+
 
 App link: https://shubhrakarmahe-streamlit-demos-neural-style-transfarapp-fwjcdl.streamlit.app/
 
